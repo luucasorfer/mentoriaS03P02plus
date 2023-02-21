@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avalie a sua mentoria</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="./assets/logo.png" alt="Balão com estrelas" />
+      </header>
+
+      <div class="headerForm">
+        <h1>Informações pessoais</h1>
+      </div>
+
+      <form id="event-form">
+        <fieldset>
+          <div class="fieldsetDiv">
+            <div class="nameSurname">
+              <div class="inputWrapper">
+                <label for="mentoringName">Nome</label>
+                <input type="text" id="mentoringName" />
+              </div>
+
+              <div class="inputWrapper">
+                <label for="mentoringSurname">Sobrenome</label>
+                <input type="text" id="mentoringSurname" />
+              </div>
+            </div>
+
+            <div class="inputWrapper">
+              <label for="mentoringEmail">
+                Email <span>(digite um email válido)</span>
+              </label>
+              <input type="email" id="mentoringEmail" required="" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldsetDiv">
+            <legend>Informações do mentor</legend>
+            <div class="inputWrapper">
+              <label for="mentoringName">Selecione quem foi o seu mentor</label>
+              <select>
+                <option value="">Mayk Brito</option>
+                <option value="">Carolina Dias</option>
+                <option value="">Rodrigo Gonçalves</option>
+                <option value="">Rodrigo Neri</option>
+              </select>
+            </div>
+
+            <div class="inputWrapper">
+              <label for="mentoringEmail"> Feedback sobre o mentor </label>
+              <textarea></textarea>
+            </div>
+
+            <div class="checkboxWrapper">
+              <input type="checkbox" id="event-private" />
+              <label for="event-private"
+                >Todas as minhas dúvidas foram esclarecidas durante a
+                mentoria.</label
+              >
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldsetDiv">
+            <legend>Agendando próxima mentoria</legend>
+            <div class="mentoringSchedule">
+              <div class="inputWrapper">
+                <label for="eventData">Data</label>
+                <input type="date" id="eventData" />
+              </div>
+
+              <div class="timeSection">
+                <div class="inputWrapper">
+                  <label for="eventBegin">Das</label>
+                  <input type="time" id="eventBegin" />
+                </div>
+
+                <div class="inputWrapper">
+                  <label for="eventEnd">Até</label>
+                  <input type="time" id="eventEnd" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+  </body>
+</html>
